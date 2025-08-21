@@ -1,3 +1,6 @@
+# Makefile - Commandes automatisées pour LinkMe
+# Facilite le démarrage, l'arrêt et la gestion du projet
+
 .PHONY: build up down logs bash install
 
 build:
