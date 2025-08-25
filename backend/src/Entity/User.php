@@ -1,5 +1,15 @@
 <?php
 
+<?php
+
+/**
+ * Entité User - Représente un utilisateur du système
+ * Gère l'authentification, le profil, et les relations sociales
+ * @package LinkMe\Entity
+ */
+
+namespace App\Entity;
+
 namespace App\Entity;
 
 use App\Repository\UserRepository;
