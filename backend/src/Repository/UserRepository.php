@@ -1,5 +1,16 @@
 <?php
 
+<?php
+
+/**
+ * Repository User
+ * Requêtes personnalisées pour les utilisateurs
+ * Recherche par nom, email, etc.
+ * @package LinkMe\Repository
+ */
+
+namespace App\Repository;
+
 namespace App\Repository;
 
 use App\Entity\User;
