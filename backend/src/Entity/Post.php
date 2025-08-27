@@ -1,5 +1,15 @@
 <?php
 
+<?php
+
+/**
+ * Entité Post - Représente une publication (post)
+ * Contient le contenu, médias, et relations (likes, comments)
+ * @package LinkMe\Entity
+ */
+
+namespace App\Entity;
+
 namespace App\Entity;
 
 use App\Repository\PostRepository;
