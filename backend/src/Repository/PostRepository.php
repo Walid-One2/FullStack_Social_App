@@ -1,5 +1,16 @@
 <?php
 
+<?php
+
+/**
+ * Repository Post
+ * Requêtes personnalisées pour les posts
+ * Tri chronologique, pagination
+ * @package LinkMe\Repository
+ */
+
+namespace App\Repository;
+
 namespace App\Repository;
 
 use App\Entity\Post;
