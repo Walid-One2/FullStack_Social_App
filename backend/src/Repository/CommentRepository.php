@@ -1,5 +1,15 @@
 <?php
 
+<?php
+
+/**
+ * Repository Comment
+ * Requêtes pour les commentaires
+ * @package LinkMe\Repository
+ */
+
+namespace App\Repository;
+
 namespace App\Repository;
 
 use App\Entity\Comment;
