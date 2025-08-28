@@ -1,5 +1,15 @@
 <?php
 
+<?php
+
+/**
+ * Entité Comment - Représente un commentaire sur un post
+ * Relation ManyToOne avec Post et User
+ * @package LinkMe\Entity
+ */
+
+namespace App\Entity;
+
 namespace App\Entity;
 
 use App\Repository\CommentRepository;
