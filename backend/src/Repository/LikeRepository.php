@@ -1,5 +1,15 @@
 <?php
 
+<?php
+
+/**
+ * Repository Like
+ * Logique toggle like, comptage
+ * @package LinkMe\Repository
+ */
+
+namespace App\Repository;
+
 namespace App\Repository;
 
 use App\Entity\Like;
