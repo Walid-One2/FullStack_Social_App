@@ -1,5 +1,15 @@
 <?php
 
+<?php
+
+/**
+ * Entité Like - Représente un like sur un post
+ * Clé composite (user_id, post_id) pour éviter les doublons
+ * @package LinkMe\Entity
+ */
+
+namespace App\Entity;
+
 namespace App\Entity;
 
 use App\Repository\LikeRepository;
