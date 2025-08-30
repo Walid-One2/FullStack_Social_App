@@ -1,5 +1,15 @@
 <?php
 
+<?php
+
+/**
+ * Repository Follow
+ * Logique follow/unfollow, compteurs
+ * @package LinkMe\Repository
+ */
+
+namespace App\Repository;
+
 namespace App\Repository;
 
 use App\Entity\Follow;
