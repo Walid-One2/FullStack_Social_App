@@ -1,5 +1,15 @@
 <?php
 
+<?php
+
+/**
+ * Entité Follow - Relation de suivi entre utilisateurs
+ * Clé composite (follower_id, followed_id)
+ * @package LinkMe\Entity
+ */
+
+namespace App\Entity;
+
 namespace App\Entity;
 
 use App\Repository\FollowRepository;
