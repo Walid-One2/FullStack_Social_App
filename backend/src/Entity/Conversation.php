@@ -1,5 +1,15 @@
 <?php
 
+<?php
+
+/**
+ * Entité Conversation - Conversation de chat entre 2 users
+ * Normalise user1 < user2 pour éviter doublons
+ * @package LinkMe\Entity
+ */
+
+namespace App\Entity;
+
 namespace App\Entity;
 
 use App\Repository\ConversationRepository;
