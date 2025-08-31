@@ -1,5 +1,15 @@
 <?php
 
+<?php
+
+/**
+ * Repository Notification
+ * Gestion des notifications
+ * @package LinkMe\Repository
+ */
+
+namespace App\Repository;
+
 namespace App\Repository;
 
 use App\Entity\Notification;
