@@ -1,5 +1,15 @@
 <?php
 
+<?php
+
+/**
+ * Entité Notification - Notifications système
+ * Types : like, comment, follow, etc.
+ * @package LinkMe\Entity
+ */
+
+namespace App\Entity;
+
 namespace App\Entity;
 
 use App\Repository\NotificationRepository;
