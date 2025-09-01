@@ -1,5 +1,15 @@
 <?php
 
+<?php
+
+/**
+ * Repository Message
+ * Requêtes pour les messages de chat
+ * @package LinkMe\Repository
+ */
+
+namespace App\Repository;
+
 namespace App\Repository;
 
 use App\Entity\Message;
