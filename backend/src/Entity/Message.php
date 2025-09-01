@@ -1,5 +1,15 @@
 <?php
 
+<?php
+
+/**
+ * Entité Message - Message de chat
+ * Supporte texte et stickers
+ * @package LinkMe\Entity
+ */
+
+namespace App\Entity;
+
 namespace App\Entity;
 
 use App\Repository\MessageRepository;
