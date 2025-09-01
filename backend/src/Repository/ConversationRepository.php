@@ -1,5 +1,15 @@
 <?php
 
+<?php
+
+/**
+ * Repository Conversation
+ * Recherche et création de conversations
+ * @package LinkMe\Repository
+ */
+
+namespace App\Repository;
+
 namespace App\Repository;
 
 use App\Entity\Conversation;
