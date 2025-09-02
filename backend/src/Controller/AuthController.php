@@ -1,5 +1,15 @@
 <?php
 
+<?php
+
+/**
+ * Contrôleur d'Authentification
+ * Gère login, register, verify email, reset password
+ * @package LinkMe\Controller
+ */
+
+namespace App\Controller;
+
 namespace App\Controller;
 
 use App\Entity\User;
