@@ -1,5 +1,15 @@
 <?php
 
+<?php
+
+/**
+ * UserChecker - Vérification du statut utilisateur
+ * Vérifie que l'email est confirmé avant connexion
+ * @package LinkMe\Security
+ */
+
+namespace App\Security;
+
 namespace App\Security;
 
 use App\Entity\User;
