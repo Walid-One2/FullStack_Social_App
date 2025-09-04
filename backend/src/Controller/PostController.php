@@ -1,5 +1,15 @@
 <?php
 
+<?php
+
+/**
+ * Contrôleur Posts
+ * CRUD complet des posts (Create, Read, Update, Delete)
+ * @package LinkMe\Controller
+ */
+
+namespace App\Controller;
+
 namespace App\Controller;
 
 use App\Entity\Post;
