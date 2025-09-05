@@ -1,5 +1,15 @@
 <?php
 
+<?php
+
+/**
+ * Contrôleur Commentaires
+ * Gestion des commentaires sur les posts
+ * @package LinkMe\Controller
+ */
+
+namespace App\Controller;
+
 namespace App\Controller;
 
 use App\Entity\Comment;
