@@ -1,5 +1,15 @@
 <?php
 
+<?php
+
+/**
+ * Contrôleur Likes
+ * Toggle like/unlike sur les posts
+ * @package LinkMe\Controller
+ */
+
+namespace App\Controller;
+
 namespace App\Controller;
 
 use App\Entity\Like;
