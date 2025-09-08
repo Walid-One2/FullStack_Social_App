@@ -1,5 +1,15 @@
 <?php
 
+<?php
+
+/**
+ * Contrôleur Chat
+ * API de messagerie instantanée avec Mercure
+ * @package LinkMe\Controller
+ */
+
+namespace App\Controller;
+
 namespace App\Controller;
 
 use App\Entity\Conversation;
