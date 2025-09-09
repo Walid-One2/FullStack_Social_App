@@ -1,5 +1,15 @@
 <?php
 
+<?php
+
+/**
+ * Contrôleur Upload
+ * Gestion des uploads d'images (posts, profils)
+ * @package LinkMe\Controller
+ */
+
+namespace App\Controller;
+
 namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
