@@ -1,119 +1,265 @@
-﻿// frontend/src/api.js
+﻿/**
+ * Module API - Gestion de toutes les requêtes HTTP vers le backend
+ * Utilise Axios avec intercepteurs pour gérer l'authentification JWT
+ */
+
 import axios from 'axios'
 
-export const API_HOST = 'http://localhost:8000' // Change to your API host
+// URL de base de l'API backend
+export const API_HOST = 'http://localhost:8000'
 
+// Création de l'instance Axios configurée
 export const api = axios.create({
-	baseURL: API_HOST,
+    baseURL: API_HOST,
 })
 
-// Ajouter le token d'authentification aux requêtes
+// Intercepteur de requêtes : Ajoute automatiquement le token JWT à chaque requête
 api.interceptors.request.use((config) => {
-	const token = localStorage.getItem('token')
-	if (token) {
-		config.headers.Authorization = `Bearer ${token}`
-	}
-	return config
+    const token = localStorage.getItem('token')
+    if (token) {
+        config.headers.Authorization = `Bearer ${token}`
+    }
+    return config
 })
 
+// =====================================
+// API d'Authentification et Profil
+// =====================================
+
+/**
+ * Inscription d'un nouvel utilisateur
+ * @param {string} password - Mot de passe
+ * @param {string} email - Email
+ * @param {string} name - Nom d'utilisateur
+ */
 export const register = (password, email, name) => {
     return api.post('/api/user/register', { password, email, name })
 }
 
+/**
+ * Récupération du profil de l'utilisateur connecté
+ */
 export const getProfile = () => {
-	return api.get('/api/user/profile')
+    return api.get('/api/user/profile')
 }
 
+/**
+ * Mise à jour du profil utilisateur
+ * @param {Object} profileData - Données du profil à mettre à jour
+ */
 export const updateProfile = (profileData) => {
-	return api.put('/api/user/profile', profileData)
+    return api.put('/api/user/profile', profileData)
 }
 
-// Posts API
+// =====================================
+// API des Posts
+// =====================================
+
+/**
+ * Récupération de tous les posts (fil d'actualités)
+ */
 export const getPosts = () => {
-	return api.get('/api/posts')
+    return api.get('/api/posts')
 }
 
+/**
+ * Création d'un nouveau post
+ * @param {Object} postData - Contenu et média du post
+ */
 export const createPost = (postData) => {
-	return api.post('/api/posts', postData)
+    return api.post('/api/posts', postData)
 }
 
+/**
+ * Récupération d'un post spécifique par son ID
+ * @param {number} id - ID du post
+ */
 export const getPost = (id) => {
-	return api.get(`/api/posts/${id}`)
+    return api.get(`/api/posts/${id}`)
 }
 
+/**
+ * Mise à jour d'un post existant
+ * @param {number} id - ID du post
+ * @param {Object} postData - Nouvelles données du post
+ */
 export const updatePost = (id, postData) => {
-	return api.put(`/api/posts/${id}`, postData)
+    return api.put(`/api/posts/${id}`, postData)
 }
 
+/**
+ * Suppression d'un post
+ * @param {number} id - ID du post à supprimer
+ */
 export const deletePost = (id) => {
-	return api.delete(`/api/posts/${id}`)
+    return api.delete(`/api/posts/${id}`)
 }
 
+/**
+ * Récupération des posts d'un utilisateur spécifique
+ * @param {number} userId - ID de l'utilisateur
+ */
 export const getUserPosts = (userId) => {
-	return api.get(`/api/posts/user/${userId}`)
+    return api.get(`/api/posts/user/${userId}`)
 }
 
-// Likes API
+// =====================================
+// API des Likes
+// =====================================
+
+/**
+ * Toggle (ajouter/retirer) un like sur un post
+ * @param {number} postId - ID du post
+ */
 export const toggleLike = (postId) => {
-	return api.post(`/api/posts/${postId}/like`)
+    return api.post(`/api/posts/${postId}/like`)
 }
 
+/**
+ * Vérifier si l'utilisateur a liké un post
+ * @param {number} postId - ID du post
+ */
 export const getLikeStatus = (postId) => {
-	return api.get(`/api/posts/${postId}/like`)
+    return api.get(`/api/posts/${postId}/like`)
 }
 
-// Comments API
+/**
+ * Récupération de la liste des utilisateurs ayant liké un post
+ * @param {number} postId - ID du post
+ */
+export const getLikesUsers = (postId) => {
+    return api.get(`/api/posts/${postId}/likes`)
+}
+
+// =====================================
+// API des Commentaires
+// =====================================
+
+/**
+ * Récupération des commentaires d'un post
+ * @param {number} postId - ID du post
+ */
 export const getComments = (postId) => {
-	return api.get(`/api/posts/${postId}/comments`)
+    return api.get(`/api/posts/${postId}/comments`)
 }
 
+/**
+ * Ajout d'un commentaire sur un post
+ * @param {number} postId - ID du post
+ * @param {string} content - Contenu du commentaire
+ */
 export const createComment = (postId, content) => {
-	return api.post(`/api/posts/${postId}/comments`, { content })
+    return api.post(`/api/posts/${postId}/comments`, { content })
 }
 
+/**
+ * Suppression d'un commentaire
+ * @param {number} commentId - ID du commentaire
+ */
 export const deleteComment = (commentId) => {
-	return api.delete(`/api/comments/${commentId}`)
+    return api.delete(`/api/comments/${commentId}`)
 }
 
-// Users API (search/public profile/follow)
+// =====================================
+// API des Utilisateurs
+// =====================================
+
+/**
+ * Recherche d'utilisateurs par nom
+ * @param {string} q - Terme de recherche
+ */
 export const searchUsers = (q) => {
     return api.get(`/api/users/search`, { params: { q } })
 }
 
+/**
+ * Récupération du profil public d'un utilisateur
+ * @param {string} username - Nom d'utilisateur
+ */
 export const getPublicProfile = (username) => {
     return api.get(`/api/users/${username}`)
 }
 
+/**
+ * Toggle follow/unfollow d'un utilisateur
+ * @param {number} userId - ID de l'utilisateur
+ */
 export const toggleFollow = (userId) => {
     return api.post(`/api/users/${userId}/follow`)
 }
 
+/**
+ * Accepter une demande de suivi
+ * @param {number} userId - ID de l'utilisateur
+ */
 export const acceptFollow = (userId) => {
     return api.post(`/api/users/${userId}/follow/accept`)
 }
 
+/**
+ * Rejeter une demande de suivi
+ * @param {number} userId - ID de l'utilisateur
+ */
 export const rejectFollow = (userId) => {
     return api.post(`/api/users/${userId}/follow/reject`)
 }
 
+/**
+ * Récupération de la liste des abonnements de l'utilisateur connecté
+ */
 export const getFollowings = () => {
     return api.get('/api/user/followings')
 }
 
-// Notifications API
+/**
+ * Récupération de la liste des abonnés d'un utilisateur
+ * @param {number} userId - ID de l'utilisateur
+ */
+export const getFollowers = (userId) => {
+    return api.get(`/api/users/${userId}/followers`)
+}
+
+/**
+ * Récupération de la liste des abonnements d'un utilisateur
+ * @param {number} userId - ID de l'utilisateur
+ */
+export const getFollowing = (userId) => {
+    return api.get(`/api/users/${userId}/following`)
+}
+
+// =====================================
+// API des Notifications
+// =====================================
+
+/**
+ * Récupération de toutes les notifications
+ */
 export const getNotifications = () => {
     return api.get('/api/notifications')
 }
 
+/**
+ * Récupération du nombre de notifications non lues
+ */
 export const getUnreadNotificationsCount = () => {
     return api.get('/api/notifications/unread-count')
 }
 
+/**
+ * Marquer toutes les notifications comme lues
+ */
 export const markAllNotificationsAsRead = () => {
     return api.post('/api/notifications/mark-all-read')
 }
 
-// Upload API
+// =====================================
+// API de Upload
+// =====================================
+
+/**
+ * Upload d'une image vers le serveur
+ * @param {File} file - Fichier image à uploader
+ */
 export const uploadImage = (file) => {
     const formData = new FormData()
     formData.append('image', file)
@@ -124,82 +270,52 @@ export const uploadImage = (file) => {
     })
 }
 
-// Chat API
+// =====================================
+// API de Chat (Messagerie)
+// =====================================
+
+/**
+ * Récupération de toutes les conversations de chat
+ */
 export const getChatConversations = () => {
     return api.get('/api/chat/conversations')
 }
 
+/**
+ * Récupération des messages d'une conversation
+ * @param {number} conversationId - ID de la conversation
+ */
 export const getChatMessages = (conversationId) => {
     return api.get(`/api/chat/conversations/${conversationId}/messages`)
 }
 
+/**
+ * Envoi d'un message dans une conversation
+ * @param {number} conversationId - ID de la conversation
+ * @param {Object} messageData - Contenu du message (texte ou sticker)
+ */
 export const sendChatMessage = (conversationId, messageData) => {
     return api.post(`/api/chat/conversations/${conversationId}/messages`, messageData)
 }
 
+/**
+ * Marquer une conversation comme lue
+ * @param {number} conversationId - ID de la conversation
+ */
 export const markChatAsRead = (conversationId) => {
     return api.post(`/api/chat/conversations/${conversationId}/read`)
 }
 
+/**
+ * Récupération de la liste des stickers disponibles
+ */
 export const getChatStickers = () => {
     return api.get('/api/chat/stickers')
 }
 
+/**
+ * Mise à jour du statut en ligne de l'utilisateur
+ */
 export const updateOnlineStatus = () => {
     return api.post('/api/chat/online-status')
 }
-
-// Followers/Following API
-export const getFollowers = (userId) => {
-    return api.get(`/api/users/${userId}/followers`)
-}
-
-export const getFollowing = (userId) => {
-    return api.get(`/api/users/${userId}/following`)
-}
-
-// Likes API
-export const getLikesUsers = (postId) => {
-    return api.get(`/api/posts/${postId}/likes`)
-}
-: chore: configuration de la base de données MySQL - 2025-08-21T19:00:00 
-
-: chore: installation de LexikJWTAuthenticationBundle - 2025-08-21T19:31:00 
-
-: feat(backend): ajout des propriétés email et password à User - 2025-08-23T14:14:00 
-
-: feat(backend): génération des clés JWT - 2025-08-28T18:01:00 
-
-: feat(backend): génération du token JWT lors de la connexion - 2025-08-29T18:13:00 
-
-: feat(frontend): stockage du token JWT dans localStorage - 2025-08-31T15:04:00 
-
-: feat(frontend): configuration de l'intercepteur pour JWT - 2025-09-01T11:51:00 
-
-: feat(backend): liste des utilisateurs ayant liké - 2025-09-05T13:30:00 
-
-: feat(backend): implémentation de DELETE /api/comments/{id} - 2025-09-06T15:32:00 
-
-: feat(frontend): création du store posts.js - 2025-09-06T18:03:00 
-
-: feat(frontend): création de la vue Home.vue pour le feed - 2025-09-07T09:15:00 
-
-: feat(frontend): affichage du contenu et média - 2025-09-08T12:09:00 
-
-: style(frontend): design du header de profil - 2025-09-10T14:09:00 
-
-: feat(frontend): implémentation de markAllAsRead - 2025-09-15T19:54:00 
-
-: feat(backend): normalisation user1/user2 (id min/max) - 2025-09-16T19:50:00 
-
-: feat(backend): création des repositories Conversation et Message - 2025-09-17T13:13:00 
-
-: feat(frontend): affichage des messages avec bulles - 2025-09-21T15:02:00 
-
-: feat(backend): envoi email de vérification - 2025-09-23T14:09:00 
-
-: feat(backend): installation client Elasticsearch PHP - 2025-09-26T17:27:00 
-
-: feat(backend): publication update lors nouveau like - 2025-09-29T16:57:00 
-
-: feat(backend): implémentation de POST /api/upload/image - 2025-09-30T19:27:00 
