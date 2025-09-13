@@ -1,23 +1,36 @@
-﻿import { defineStore } from "pinia";
-import { 
-  getNotifications, 
-  getUnreadNotificationsCount, 
-  markAllNotificationsAsRead 
+﻿/**
+ * Store Pinia - Gestion des notifications
+ * Gère la récupération, le comptage et le marquage des notifications
+ * Supporte les mises à jour en temps réel via Mercure
+ */
+
+import { defineStore } from "pinia";
+import {
+  getNotifications,
+  getUnreadNotificationsCount,
+  markAllNotificationsAsRead
 } from "../api";
 
 export const useNotificationsStore = defineStore("notifications", {
+  // État du store notifications
   state: () => ({
-    notifications: [],
-    unreadCount: 0,
-    isLoading: false,
-    error: null,
+    notifications: [], // Liste de toutes les notifications
+    unreadCount: 0, // Nombre de notifications non lues
+    isLoading: false, // Indicateur de chargement
+    error: null, // Message d'erreur
   }),
 
+  // Getters
   getters: {
+    /** Vérifie s'il y a des notifications non lues */
     hasUnreadNotifications: (state) => state.unreadCount > 0,
   },
 
   actions: {
+    /**
+     * Récupère toutes les notifications de l'utilisateur
+     * Charge les notifications likes, commentaires, follows, etc.
+     */
     async fetchNotifications() {
       this.isLoading = true;
       this.error = null;
@@ -32,6 +45,10 @@ export const useNotificationsStore = defineStore("notifications", {
       }
     },
 
+    /**
+     * Récupère le nombre de notifications non lues
+     * Utilisé pour afficher le badge dans la navbar
+     */
     async fetchUnreadCount() {
       try {
         const response = await getUnreadNotificationsCount();
@@ -41,6 +58,10 @@ export const useNotificationsStore = defineStore("notifications", {
       }
     },
 
+    /**
+     * Marque toutes les notifications comme lues
+     * Réinitialise le compteur et met à jour le state local
+     */
     async markAllAsRead() {
       try {
         await markAllNotificationsAsRead();
@@ -55,12 +76,18 @@ export const useNotificationsStore = defineStore("notifications", {
       }
     },
 
-    // Méthode pour mettre à jour le compteur en temps réel
+    /**
+     * Incrémente le compteur de notifications non lues
+     * Appelé lors de la réception d'une nouvelle notification en temps réel
+     */
     incrementUnreadCount() {
       this.unreadCount += 1;
     },
 
-    // Méthode pour décrémenter le compteur (si nécessaire)
+    /**
+     * Décrémente le compteur de notifications non lues
+     * Utilisé lors du marquage manuel de notifications
+     */
     decrementUnreadCount() {
       if (this.unreadCount > 0) {
         this.unreadCount -= 1;
@@ -73,38 +100,3 @@ export const useNotificationsStore = defineStore("notifications", {
   },
 });
 
-: chore: ajout du fichier docker-compose.yml - 2025-08-20T12:37:00 
-
-: chore: installation de API Platform - 2025-08-21T16:16:00 
-
-: feat(backend): ajout du champ name (nom d'utilisateur) à User - 2025-08-23T19:09:00 
-
-: feat(backend): création de l'entité Post - 2025-08-24T15:28:00 
-
-: feat(backend): configuration du fichier security.yaml - 2025-08-28T15:30:00 
-
-: feat(backend): implémentation de l'endpoint POST /api/login - 2025-08-29T18:03:00 
-
-: style(frontend): stylisation du formulaire d'inscription - 2025-09-02T11:30:00 
-
-: feat(backend): vérification de l'auto-suivi (interdit) - 2025-09-08T18:45:00 
-
-: feat(backend): ajout des relations recipient, actor, post - 2025-09-12T19:26:00 
-
-: feat(backend): création du NotificationController - 2025-09-13T10:44:00 
-
-: feat(backend): éviter les notifications en double - 2025-09-15T10:30:00 
-
-: feat(frontend): distinction visuelle lues/non lues - 2025-09-16T16:07:00 
-
-: feat(backend): création des repositories Conversation et Message - 2025-09-17T13:13:00 
-
-: feat(frontend): affichage des messages avec bulles - 2025-09-21T15:02:00 
-
-: feat(backend): migration pour colonnes vérification email - 2025-09-24T10:55:00 
-
-: feat(backend): validation du token et expiration - 2025-09-25T10:33:00 
-
-: style(frontend): design formulaire mot de passe oublié - 2025-09-26T11:28:00 
-
-: feat(frontend): validation confirmation mot de passe - 2025-09-26T15:42:00 
