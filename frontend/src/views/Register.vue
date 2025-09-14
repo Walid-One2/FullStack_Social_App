@@ -1,3 +1,8 @@
+<!--
+  Page d'Inscription
+  Formulaire d'inscription avec validation des champs
+  Envoie un email de vérification après inscription
+-->
 ﻿<template>
   <div class="auth-container">
     <div class="card">
@@ -263,40 +268,3 @@ input:focus {
 }
 </style>
 
-: chore: installation de Pinia pour state management - 2025-08-22T16:20:00 
-
-: chore: configuration de Vite - 2025-08-23T10:41:00 
-
-: feat(backend): ajout des méthodes getLikesCount et getCommentsCount - 2025-08-25T18:46:00 
-
-: feat(backend): implémentation de l'endpoint POST /api/user/register - 2025-08-29T16:04:00 
-
-: feat(frontend): création du fichier api.js avec Axios - 2025-09-01T11:44:00 
-
-: style(frontend): stylisation du formulaire de connexion - 2025-09-01T16:28:00 
-
-: feat(frontend): création de la vue Register.vue - 2025-09-01T19:20:00 
-
-: feat(frontend): validation du formulaire d'inscription - 2025-09-02T13:37:00 
-
-: feat(backend): liste des utilisateurs ayant liké - 2025-09-05T13:30:00 
-
-: feat(backend): vérification de l'auteur pour suppression - 2025-09-06T17:51:00 
-
-: feat(frontend): chargement du profil public par nom d'utilisateur - 2025-09-11T11:00:00 
-
-: style(frontend): design du profil public - 2025-09-11T19:25:00 
-
-: feat(backend): personnalisation des messages de notification - 2025-09-15T10:16:00 
-
-: feat(frontend): badge nombre de notifications non lues - 2025-09-16T14:42:00 
-
-: feat(frontend): bouton tout marquer comme lu - 2025-09-16T16:46:00 
-
-: feat(frontend): rafraîchissement automatique des messages - 2025-09-22T16:30:00 
-
-: feat(backend): invalidation du token après usage - 2025-09-25T15:13:00 
-
-: feat(frontend): récupération du token depuis URL - 2025-09-25T19:16:00 
-
-: style(frontend): design formulaire mot de passe oublié - 2025-09-26T11:28:00 
