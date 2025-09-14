@@ -1,3 +1,8 @@
+<!--
+  Page de Connexion
+  Formulaire de connexion avec validation
+  Gère l'authentification via JWT et redirige vers le feed
+-->
 ﻿<template>
   <div class="auth-container">
     <div class="card">
@@ -275,46 +280,3 @@ input:focus {
 }
 </style>
 
-: chore: initialisation du projet LinkMe - 2025-08-20T11:32:00 
-
-: chore: installation de Pinia pour state management - 2025-08-22T16:20:00 
-
-: feat(backend): création du PostRepository - 2025-08-25T14:57:00 
-
-: feat(backend): configuration des firewalls login et api - 2025-08-28T16:26:00 
-
-: feat(backend): configuration des firewalls login et api - 2025-08-28T16:26:00 
-
-: feat(backend): implémentation de l'endpoint POST /api/login - 2025-08-29T18:03:00 
-
-: feat(frontend): implémentation de l'action login - 2025-08-31T13:36:00 
-
-: feat(frontend): création de la vue Login.vue - 2025-09-01T16:11:00 
-
-: feat(frontend): validation du formulaire d'inscription - 2025-09-02T13:37:00 
-
-: feat(backend): validation des données de post - 2025-09-03T11:59:00 
-
-: feat(frontend): implémentation de deletePost - 2025-09-07T09:12:00 
-
-: feat(frontend): affichage du contenu et média - 2025-09-08T12:09:00 
-
-: feat(frontend): affichage du temps relatif de publication - 2025-09-08T14:42:00 
-
-: feat(backend): personnalisation des messages de notification - 2025-09-15T10:16:00 
-
-: feat(frontend): gestion du compteur de non lues - 2025-09-15T18:11:00 
-
-: feat(backend): tri des conversations par dernière activité - 2025-09-18T09:52:00 
-
-: feat(frontend): panel de sélection de stickers - 2025-09-21T19:34:00 
-
-: feat(frontend): rafraîchissement automatique des messages - 2025-09-22T16:30:00 
-
-: feat(backend): validation du token et expiration - 2025-09-25T10:33:00 
-
-: feat(frontend): redirection automatique vers login après 10s - 2025-09-26T11:00:00 
-
-: style(frontend): design formulaire mot de passe oublié - 2025-09-26T11:28:00 
-
-: feat(backend): publication update lors nouveau like - 2025-09-29T16:57:00 
