@@ -1,3 +1,8 @@
+<!--
+  Page Mot de Passe Oublié
+  Formulaire pour demander la réinitialisation du mot de passe
+  Envoie un email avec un lien de réinitialisation
+-->
 ﻿<template>
   <div class="forgot-password-container">
     <div class="forgot-password-card">
@@ -396,48 +401,3 @@ const goToLogin = () => {
 }
 </style>
 
-: chore: configuration de la base de données MySQL - 2025-08-21T19:00:00 
-
-: chore: configuration de Vite - 2025-08-23T10:41:00 
-
-: feat(backend): ajout des propriétés email et password à User - 2025-08-23T14:14:00 
-
-: feat(backend): ajout du champ media à Post - 2025-08-25T09:37:00 
-
-: feat(backend): hashage du mot de passe lors de l'inscription - 2025-08-29T16:50:00 
-
-: feat(backend): logique toggle follow/unfollow - 2025-09-08T17:30:00 
-
-: feat(backend): implémentation de GET /api/users/{id}/followers - 2025-09-09T11:17:00 
-
-: feat(backend): comptage des followers/following - 2025-09-09T16:05:00 
-
-: feat(frontend): implémentation de markAllAsRead - 2025-09-15T19:54:00 
-
-: feat(frontend): affichage de la liste des notifications - 2025-09-16T15:59:00 
-
-: feat(backend): logique de création/récupération de conversation - 2025-09-18T11:09:00 
-
-: feat(frontend): marquer conversation comme lue à l'ouverture - 2025-09-22T13:32:00 
-
-: feat(backend): ajout des champs isVerified et verificationToken à User - 2025-09-23T11:33:00 
-
-: feat(backend): migration pour colonnes vérification email - 2025-09-24T10:55:00 
-
-: feat(backend): ajout resetPasswordToken et expiresAt à User - 2025-09-24T11:18:00 
-
-: feat(backend): implémentation de POST /api/user/forgot-password - 2025-09-24T11:27:00 
-
-: feat(backend): implémentation de POST /api/user/reset-password - 2025-09-24T17:58:00 
-
-: feat(frontend): récupération du token depuis URL - 2025-09-25T19:16:00 
-
-: feat(frontend): création de la vue ForgotPassword.vue - 2025-09-26T11:09:00 
-
-: feat(frontend): création de la vue ResetPassword.vue - 2025-09-26T14:11:00 
-
-: feat: création de dashboards Kibana - 2025-09-28T14:48:00 
-
-: feat(backend): création du UploadController - 2025-09-30T18:46:00 
-
-: feat(backend): implémentation de POST /api/upload/image - 2025-09-30T19:27:00 
