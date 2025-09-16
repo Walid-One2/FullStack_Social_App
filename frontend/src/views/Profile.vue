@@ -1,3 +1,8 @@
+<!--
+  Page Profil Personnel
+  Affiche et permet d'éditer le profil de l'utilisateur connecté
+  Montre les posts, followers, followings de l'utilisateur
+-->
 ﻿<template>
   <div class="profile-container">
     <div class="profile-content">
@@ -807,58 +812,3 @@ onMounted(() => {
 }
 </style>
 
-: chore: initialisation du projet LinkMe - 2025-08-20T11:32:00 
-
-: chore: initialisation du projet Vue.js 3 avec Vite - 2025-08-22T14:09:00 
-
-: chore: installation de Bootstrap 5 - 2025-08-23T09:44:00 
-
-: chore: configuration de Vite - 2025-08-23T10:41:00 
-
-: feat(backend): ajout du champ profilePhoto à User - 2025-08-24T12:34:00 
-
-: feat(backend): implémentation de GET /api/user/profile - 2025-08-30T11:22:00 
-
-: feat(backend): implémentation de PUT /api/user/profile - 2025-08-30T14:42:00 
-
-: feat(frontend): implémentation de l'action logout - 2025-08-31T16:36:00 
-
-: feat(backend): implémentation de GET /api/posts/{id} - 2025-09-03T16:35:00 
-
-: feat(backend): vérification de l'auteur pour l'édition - 2025-09-03T19:07:00 
-
-: feat(backend): création du LikeController - 2025-09-04T14:27:00 
-
-: feat(frontend): gestion de l'état des abonnements - 2025-09-10T10:12:00 
-
-: feat(frontend): création de la vue Profile.vue - 2025-09-10T14:02:00 
-
-: feat(frontend): chargement des posts de l'utilisateur - 2025-09-11T09:10:00 
-
-: feat(frontend): création de la vue UserProfile.vue - 2025-09-11T10:57:00 
-
-: feat(frontend): affichage de la liste des abonnements - 2025-09-12T10:10:00 
-
-: feat(backend): création du NotificationController - 2025-09-13T10:44:00 
-
-: feat(backend): méthode getTimeAgo pour temps relatif - 2025-09-14T11:25:00 
-
-: style(frontend): design du dropdown de notifications - 2025-09-16T12:15:00 
-
-: feat(frontend): badge nombre de notifications non lues - 2025-09-16T14:42:00 
-
-: feat(backend): tri des conversations par dernière activité - 2025-09-18T09:52:00 
-
-: feat(backend): implémentation de POST /api/chat/conversations/{id}/messages - 2025-09-18T16:13:00 
-
-: feat(backend): implémentation de POST /api/chat/conversations/{id}/read - 2025-09-19T12:19:00 
-
-: feat(frontend): création du composant ChatModal.vue - 2025-09-20T17:54:00 
-
-: feat(frontend): zone de saisie de message - 2025-09-21T16:51:00 
-
-: feat(frontend): panel de sélection de stickers - 2025-09-21T19:34:00 
-
-: feat(backend): génération token avec expiration 30min - 2025-09-24T11:37:00 
-
-: style(frontend): design formulaire mot de passe oublié - 2025-09-26T11:28:00 
