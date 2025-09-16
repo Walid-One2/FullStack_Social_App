@@ -1,3 +1,8 @@
+<!--
+  Page Profil Public
+  Affiche le profil public d'un autre utilisateur
+  Permet de follow/unfollow et voir les posts publics
+-->
 ﻿<template>
   <div class="profile-container" v-if="loaded">
     <div class="profile-content">
@@ -434,57 +439,3 @@ onMounted(load)
 </style>
 
 
-
-: feat(backend): ajout du champ profilePhoto à User - 2025-08-24T12:34:00 
-
-: feat(backend): ajout du champ media à Post - 2025-08-25T09:37:00 
-
-: feat(backend): configuration des providers utilisateur - 2025-08-28T19:23:00 
-
-: feat(backend): implémentation de GET /api/user/profile - 2025-08-30T11:22:00 
-
-: feat(backend): implémentation de PUT /api/user/profile - 2025-08-30T14:42:00 
-
-: feat(backend): implémentation de GET /api/users/{username} - 2025-08-31T11:13:00 
-
-: feat(frontend): création de la vue Register.vue - 2025-09-01T19:20:00 
-
-: feat(frontend): création de la vue Home.vue pour le feed - 2025-09-07T09:15:00 
-
-: feat(frontend): rafraîchissement automatique du feed - 2025-09-07T11:28:00 
-
-: feat(frontend): affichage du temps relatif de publication - 2025-09-08T14:42:00 
-
-: feat(frontend): création du store followings.js - 2025-09-09T17:25:00 
-
-: feat(frontend): création de la vue Profile.vue - 2025-09-10T14:02:00 
-
-: feat(frontend): chargement des posts de l'utilisateur - 2025-09-11T09:10:00 
-
-: feat(frontend): création de la vue UserProfile.vue - 2025-09-11T10:57:00 
-
-: feat(frontend): mise à jour des compteurs en temps réel - 2025-09-11T11:55:00 
-
-: feat(backend): personnalisation des messages de notification - 2025-09-15T10:16:00 
-
-: feat(frontend): implémentation de fetchNotifications - 2025-09-15T16:17:00 
-
-: feat(frontend): badge nombre de notifications non lues - 2025-09-16T14:42:00 
-
-: feat(backend): tri des conversations par dernière activité - 2025-09-18T09:52:00 
-
-: feat(frontend): affichage du statut en ligne - 2025-09-20T16:18:00 
-
-: feat(frontend): zone de saisie de message - 2025-09-21T16:51:00 
-
-: feat(backend): envoi email de vérification - 2025-09-23T14:09:00 
-
-: feat(backend): envoi email de réinitialisation - 2025-09-24T12:03:00 
-
-: feat(backend): validation du token et expiration - 2025-09-25T10:33:00 
-
-: feat(frontend): récupération du token depuis URL - 2025-09-25T19:16:00 
-
-: feat(frontend): barre de recherche dans Navbar - 2025-09-28T10:34:00 
-
-: docs: ajout instructions Kibana dans README - 2025-09-28T12:46:00 
