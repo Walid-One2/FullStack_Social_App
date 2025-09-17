@@ -1,3 +1,8 @@
+<!--
+  Page Vérification Email
+  Valide le token de vérification d'email
+  Active le compte après vérification réussie
+-->
 ﻿<template>
   <div class="verify-email-container">
     <div class="verify-email-card">
@@ -345,54 +350,3 @@ onUnmounted(() => {
 }
 </style>
 
-: feat: ajout du service MailHog pour tests emails - 2025-08-21T14:01:00 
-
-: chore: création du projet Symfony 7 - 2025-08-21T14:20:00 
-
-: chore: configuration de Vite - 2025-08-23T10:41:00 
-
-: feat(backend): ajout des propriétés email et password à User - 2025-08-23T14:14:00 
-
-: feat(backend): implémentation de UserInterface pour sécurité - 2025-08-24T13:08:00 
-
-: feat(backend): création de l'entité Follow - 2025-08-27T16:52:00 
-
-: feat(backend): création du AuthController - 2025-08-29T13:33:00 
-
-: feat(frontend): gestion de l'état isLoggedIn - 2025-09-01T10:53:00 
-
-: feat(frontend): rafraîchissement automatique du feed - 2025-09-07T11:28:00 
-
-: feat(frontend): chargement des posts de l'utilisateur - 2025-09-11T09:10:00 
-
-: feat(backend): ajout des relations recipient, actor, post - 2025-09-12T19:26:00 
-
-: feat(backend): ajout support stickers dans Message - 2025-09-17T11:40:00 
-
-: style(frontend): design de l'interface de chat - 2025-09-21T11:25:00 
-
-: feat(frontend): affichage des messages avec bulles - 2025-09-21T15:02:00 
-
-: feat(frontend): support des stickers - 2025-09-21T18:53:00 
-
-: feat(backend): envoi email de vérification - 2025-09-23T14:09:00 
-
-: feat(backend): implémentation de GET /api/user/verify-email - 2025-09-23T15:01:00 
-
-: feat(backend): création du UserChecker - 2025-09-23T18:07:00 
-
-: feat(backend): migration pour colonnes vérification email - 2025-09-24T10:55:00 
-
-: feat(backend): envoi email de réinitialisation - 2025-09-24T12:03:00 
-
-: feat(frontend): création de la vue VerifyEmail.vue - 2025-09-25T16:10:00 
-
-: style(frontend): design page de vérification email - 2025-09-25T16:11:00 
-
-: style(frontend): design formulaire réinitialisation - 2025-09-26T14:21:00 
-
-: docs: ajout instructions Kibana dans README - 2025-09-28T12:46:00 
-
-: feat(frontend): messages chat en temps réel - 2025-09-30T12:05:00 
-
-: feat(backend): création du UploadController - 2025-09-30T18:46:00 
