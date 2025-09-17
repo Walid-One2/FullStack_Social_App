@@ -1,3 +1,8 @@
+<!--
+  Composant Navigation - Barre de Navigation Principale
+  Affiche le menu, la recherche, les notifications et l'avatar utilisateur
+  Gère l'ouverture des modales et le statut en ligne
+-->
 ﻿<template>
   <nav class="navbar">
     <div class="navbar-container">
@@ -594,42 +599,3 @@ const goToUser = (u) => {
 }
 </style>
 
-: feat: ajout du service phpMyAdmin - 2025-08-20T15:17:00 
-
-: feat: configuration du service Elasticsearch - 2025-08-20T18:49:00 
-
-: feat: ajout du service Kibana pour Elasticsearch - 2025-08-21T11:26:00 
-
-: chore: configuration de la base de données MySQL - 2025-08-21T19:00:00 
-
-: chore: installation de Bootstrap 5 - 2025-08-23T09:44:00 
-
-: feat(backend): ajout de la relation Like->User - 2025-08-26T19:46:00 
-
-: feat(backend): implémentation de GET /api/users/search - 2025-08-31T09:15:00 
-
-: feat(backend): liste des utilisateurs ayant liké - 2025-09-05T13:30:00 
-
-: feat(frontend): rafraîchissement automatique du feed - 2025-09-07T11:28:00 
-
-: feat(frontend): mise à jour des compteurs en temps réel - 2025-09-11T11:55:00 
-
-: feat(frontend): badge nombre de notifications non lues - 2025-09-16T14:42:00 
-
-: feat(frontend): distinction visuelle lues/non lues - 2025-09-16T16:07:00 
-
-: feat(frontend): récupération du token depuis URL - 2025-09-25T19:16:00 
-
-: feat(backend): configuration Elasticsearch dans docker-compose - 2025-09-26T16:13:00 
-
-: feat(backend): installation client Elasticsearch PHP - 2025-09-26T17:27:00 
-
-: feat(backend): création du service ElasticsearchService - 2025-09-27T09:10:00 
-
-: feat(backend): indexation des utilisateurs - 2025-09-27T12:21:00 
-
-: feat(backend): amélioration de GET /api/users/search avec Elasticsearch - 2025-09-27T18:26:00 
-
-: feat: création d'index patterns dans Kibana - 2025-09-28T13:34:00 
-
-: docs: guide visualisation Elasticsearch avec Kibana - 2025-09-28T18:00:00 
