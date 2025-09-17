@@ -1,3 +1,8 @@
+<!--
+  Page Réinitialisation Mot de Passe
+  Formulaire de création d'un nouveau mot de passe
+  Valide le token reçu par email avant modification
+-->
 ﻿<template>
   <div class="reset-password-container">
     <div class="reset-password-card">
@@ -498,62 +503,3 @@ onUnmounted(() => {
 }
 </style>
 
-: chore: ajout de Doctrine ORM - 2025-08-21T17:09:00 
-
-: docs: ajout du README.md avec instructions de démarrage - 2025-08-22T13:07:00 
-
-: chore: installation de Pinia pour state management - 2025-08-22T16:20:00 
-
-: feat(backend): ajout des propriétés email et password à User - 2025-08-23T14:14:00 
-
-: feat(backend): ajout du champ name (nom d'utilisateur) à User - 2025-08-23T19:09:00 
-
-: feat(backend): création de la migration initiale des entités - 2025-08-28T15:02:00 
-
-: feat(backend): génération du token JWT lors de la connexion - 2025-08-29T18:13:00 
-
-: feat(frontend): création de la vue Login.vue - 2025-09-01T16:11:00 
-
-: feat(backend): implémentation de DELETE /api/comments/{id} - 2025-09-06T15:32:00 
-
-: feat(frontend): affichage du contenu et média - 2025-09-08T12:09:00 
-
-: feat(backend): logique toggle follow/unfollow - 2025-09-08T17:30:00 
-
-: feat(frontend): gestion de l'état des abonnements - 2025-09-10T10:12:00 
-
-: feat(backend): migration pour la table notification - 2025-09-13T09:11:00 
-
-: feat(backend): implémentation de GET /api/chat/stickers - 2025-09-19T13:00:00 
-
-: feat(frontend): distinction messages envoyés/reçus - 2025-09-21T16:17:00 
-
-: feat(frontend): zone de saisie de message - 2025-09-21T16:51:00 
-
-: feat(backend): génération token sécurisé lors inscription - 2025-09-23T13:44:00 
-
-: feat(backend): blocage connexion si compte non vérifié - 2025-09-23T18:36:00 
-
-: feat(backend): ajout resetPasswordToken et expiresAt à User - 2025-09-24T11:18:00 
-
-: feat(backend): implémentation de POST /api/user/forgot-password - 2025-09-24T11:27:00 
-
-: feat(backend): implémentation de POST /api/user/reset-password - 2025-09-24T17:58:00 
-
-: feat(backend): validation du token et expiration - 2025-09-25T10:33:00 
-
-: feat(backend): mise à jour du mot de passe - 2025-09-25T13:46:00 
-
-: feat(frontend): création de la vue ForgotPassword.vue - 2025-09-26T11:09:00 
-
-: feat(frontend): création de la vue ResetPassword.vue - 2025-09-26T14:11:00 
-
-: style(frontend): design formulaire réinitialisation - 2025-09-26T14:21:00 
-
-: feat(backend): création du service ElasticsearchService - 2025-09-27T09:10:00 
-
-: feat(backend): recherche par nom partiel - 2025-09-27T18:38:00 
-
-: feat: création d'index patterns dans Kibana - 2025-09-28T13:34:00 
-
-: feat(frontend): messages chat en temps réel - 2025-09-30T12:05:00 
