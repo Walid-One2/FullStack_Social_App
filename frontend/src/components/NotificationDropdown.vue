@@ -1,3 +1,8 @@
+<!--
+  Dropdown des Notifications
+  Liste les notifications likes, comments, follows
+  Affiche le badge du nombre de notifications non lues
+-->
 ﻿<template>
   <div class="notification-dropdown" v-if="isVisible" @click.stop>
     <div class="dropdown-content">
@@ -339,42 +344,3 @@ onMounted(() => {
 }
 </style>
 
-: chore: initialisation du projet LinkMe - 2025-08-20T11:32:00 
-
-: chore: initialisation du projet Vue.js 3 avec Vite - 2025-08-22T14:09:00 
-
-: feat(backend): configuration des providers utilisateur - 2025-08-28T19:23:00 
-
-: feat(frontend): gestion de l'état isLoggedIn - 2025-09-01T10:53:00 
-
-: style(frontend): stylisation du formulaire de connexion - 2025-09-01T16:28:00 
-
-: feat(frontend): implémentation de deletePost - 2025-09-07T09:12:00 
-
-: feat(frontend): rafraîchissement automatique du feed - 2025-09-07T11:28:00 
-
-: feat(frontend): création du store followings.js - 2025-09-09T17:25:00 
-
-: feat(frontend): chargement du profil public par nom d'utilisateur - 2025-09-11T11:00:00 
-
-: style(frontend): design de la sidebar followings - 2025-09-12T11:15:00 
-
-: feat(backend): sérialisation des notifications avec relations - 2025-09-14T10:03:00 
-
-: feat(backend): méthode getTimeAgo pour temps relatif - 2025-09-14T11:25:00 
-
-: feat(frontend): gestion du compteur de non lues - 2025-09-15T18:11:00 
-
-: feat(frontend): bouton tout marquer comme lu - 2025-09-16T16:46:00 
-
-: feat(backend): logique de création/récupération de conversation - 2025-09-18T11:09:00 
-
-: feat(backend): implémentation de GET /api/chat/conversations/{id}/messages - 2025-09-18T11:13:00 
-
-: feat(backend): implémentation de POST /api/chat/conversations/{id}/read - 2025-09-19T12:19:00 
-
-: feat(backend): implémentation de GET /api/chat/stickers - 2025-09-19T13:00:00 
-
-: feat(backend): création du service ElasticsearchService - 2025-09-27T09:10:00 
-
-: feat(backend): création du UploadController - 2025-09-30T18:46:00 
