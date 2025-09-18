@@ -1,3 +1,8 @@
+<!--
+  Composant Carte de Post
+  Affiche un post avec son contenu, média, auteur
+  Gère les interactions : like, comment, edit, delete
+-->
 ﻿<template>
   <div class="post-card">
     <!-- Header du post -->
@@ -677,40 +682,3 @@ onUnmounted(() => {
 }
 </style>
 
-: chore: ajout de Doctrine ORM - 2025-08-21T17:09:00 
-
-: chore: installation de LexikJWTAuthenticationBundle - 2025-08-21T19:31:00 
-
-: docs: ajout du README.md avec instructions de démarrage - 2025-08-22T13:07:00 
-
-: feat(backend): ajout de la relation followed->User - 2025-08-28T09:36:00 
-
-: feat(backend): configuration du fichier security.yaml - 2025-08-28T15:30:00 
-
-: feat(frontend): gestion des erreurs d'authentification - 2025-09-02T13:44:00 
-
-: feat(backend): validation des données de post - 2025-09-03T11:59:00 
-
-: feat(backend): implémentation de GET /api/posts/{id}/likes - 2025-09-05T11:50:00 
-
-: feat(backend): validation du contenu du commentaire - 2025-09-06T12:46:00 
-
-: feat(frontend): création de la vue Home.vue pour le feed - 2025-09-07T09:15:00 
-
-: style(frontend): mise en page du feed avec grille - 2025-09-07T11:16:00 
-
-: feat(frontend): rafraîchissement automatique du feed - 2025-09-07T11:28:00 
-
-: feat(backend): sérialisation des données de suivi - 2025-09-09T16:25:00 
-
-: feat(backend): création de l'entité Notification - 2025-09-12T17:22:00 
-
-: feat(backend): implémentation de GET /api/chat/conversations - 2025-09-17T18:14:00 
-
-: feat(backend): implémentation de POST /api/chat/online-status - 2025-09-19T14:14:00 
-
-: feat(frontend): envoi de message avec Enter - 2025-09-21T18:25:00 
-
-: style(frontend): design page de vérification email - 2025-09-25T16:11:00 
-
-: feat(frontend): mise à jour temps réel du feed - 2025-09-30T09:15:00 
