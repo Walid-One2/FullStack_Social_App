@@ -1,3 +1,8 @@
+<!--
+  Modale de Visualisation de Post
+  Affiche un post en grand format avec tous les détails
+  Vue lecture seule pour consultation rapide
+-->
 ﻿<template>
   <div v-if="isVisible" class="modal-overlay" @click="closeModal">
     <div class="modal-content" @click.stop>
@@ -145,34 +150,3 @@ const closeModal = () => {
 }
 </style>
 
-: feat(backend): implémentation de UserInterface pour sécurité - 2025-08-24T13:08:00 
-
-: feat(frontend): création du fichier api.js avec Axios - 2025-09-01T11:44:00 
-
-: feat(backend): implémentation de GET /api/posts/{id}/like - 2025-09-05T11:13:00 
-
-: feat(backend): vérification de l'auteur pour suppression - 2025-09-06T17:51:00 
-
-: feat(frontend): rafraîchissement automatique du feed - 2025-09-07T11:28:00 
-
-: feat(frontend): création du composant FollowingsSidebar.vue - 2025-09-12T09:24:00 
-
-: feat(backend): création de notification lors d'un follow - 2025-09-15T09:03:00 
-
-: feat(frontend): affichage du statut en ligne - 2025-09-20T16:18:00 
-
-: feat(backend): génération token avec expiration 30min - 2025-09-24T11:37:00 
-
-: feat(backend): mise à jour du mot de passe - 2025-09-25T13:46:00 
-
-: feat(frontend): redirection automatique vers login après 10s - 2025-09-26T11:00:00 
-
-: feat(backend): installation client Elasticsearch PHP - 2025-09-26T17:27:00 
-
-: feat(backend): recherche par nom partiel - 2025-09-27T18:38:00 
-
-: feat(backend): installation symfony/mercure-bundle - 2025-09-29T12:33:00 
-
-: feat(backend): publication update lors nouveau post - 2025-09-29T16:12:00 
-
-: feat(backend): publication update lors nouveau like - 2025-09-29T16:57:00 
