@@ -1,3 +1,8 @@
+<!--
+  Modale d'Édition de Post
+  Permet de modifier le contenu et le média d'un post existant
+  Réservé au créateur du post
+-->
 ﻿<template>
   <div v-if="isVisible" class="modal-overlay" @click="closeModal">
     <div class="modal-content" @click.stop>
@@ -631,40 +636,3 @@ watch(() => props.isVisible, (newValue) => {
 }
 </style>
 
-: feat: configuration du service Mercure pour temps réel - 2025-08-21T11:40:00 
-
-: chore: ajout de Doctrine ORM - 2025-08-21T17:09:00 
-
-: chore: installation de Vue Router - 2025-08-22T14:49:00 
-
-: chore: installation de Bootstrap 5 - 2025-08-23T09:44:00 
-
-: feat(backend): ajout de la relation Comment->Post - 2025-08-26T14:08:00 
-
-: feat(backend): implémentation de GET /api/users/search - 2025-08-31T09:15:00 
-
-: feat(backend): validation des données de post - 2025-09-03T11:59:00 
-
-: feat(backend): implémentation de PUT /api/posts/{id} - 2025-09-03T16:53:00 
-
-: feat(frontend): création de la vue Home.vue pour le feed - 2025-09-07T09:15:00 
-
-: feat(backend): implémentation de GET /api/users/{id}/followers - 2025-09-09T11:17:00 
-
-: style(frontend): design de la sidebar followings - 2025-09-12T11:15:00 
-
-: feat(backend): création de l'entité Notification - 2025-09-12T17:22:00 
-
-: feat(backend): création du NotificationController - 2025-09-13T10:44:00 
-
-: feat(backend): tri des conversations par dernière activité - 2025-09-18T09:52:00 
-
-: feat(frontend): marquer conversation comme lue à l'ouverture - 2025-09-22T13:32:00 
-
-: feat(frontend): auto-scroll vers le dernier message - 2025-09-22T14:37:00 
-
-: feat(backend): mise à jour du mot de passe - 2025-09-25T13:46:00 
-
-: feat: création d'index patterns dans Kibana - 2025-09-28T13:34:00 
-
-: feat(backend): implémentation de POST /api/upload/image - 2025-09-30T19:27:00 
