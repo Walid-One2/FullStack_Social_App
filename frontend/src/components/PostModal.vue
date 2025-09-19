@@ -1,3 +1,8 @@
+<!--
+  Modale de Création de Post
+  Formulaire pour créer un nouveau post
+  Supporte l'upload d'images via drag & drop ou sélection
+-->
 ﻿<template>
   <div v-if="isVisible" class="modal-overlay" @click="closeModal">
     <div class="modal-content" @click.stop>
@@ -562,36 +567,3 @@ watch(() => props.isVisible, (newValue) => {
 }
 </style>
 
-: chore: installation de API Platform - 2025-08-21T16:16:00 
-
-: feat(backend): ajout des méthodes getLikesCount et getCommentsCount - 2025-08-25T18:46:00 
-
-: feat(backend): configuration du fichier security.yaml - 2025-08-28T15:30:00 
-
-: feat(backend): validation des données d'inscription - 2025-08-29T16:15:00 
-
-: style(frontend): stylisation du formulaire de connexion - 2025-09-01T16:28:00 
-
-: feat(frontend): chargement des posts de l'utilisateur - 2025-09-11T09:10:00 
-
-: feat(frontend): mise à jour des compteurs en temps réel - 2025-09-11T11:55:00 
-
-: style(frontend): design de la sidebar followings - 2025-09-12T11:15:00 
-
-: feat(backend): migration pour la table notification - 2025-09-13T09:11:00 
-
-: feat(backend): création du NotificationController - 2025-09-13T10:44:00 
-
-: feat(backend): sérialisation des notifications avec relations - 2025-09-14T10:03:00 
-
-: feat(frontend): bouton tout marquer comme lu - 2025-09-16T16:46:00 
-
-: feat(backend): création de l'entité Conversation - 2025-09-16T19:47:00 
-
-: feat(backend): tri des conversations par dernière activité - 2025-09-18T09:52:00 
-
-: feat(backend): implémentation de GET /api/chat/stickers - 2025-09-19T13:00:00 
-
-: feat(frontend): indicateur de lecture des messages - 2025-09-22T15:49:00 
-
-: feat: création de dashboards Kibana - 2025-09-28T14:48:00 
