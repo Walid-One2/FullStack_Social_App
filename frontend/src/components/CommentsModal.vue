@@ -1,3 +1,8 @@
+<!--
+  Modale des Commentaires
+  Affiche tous les commentaires d'un post
+  Permet d'ajouter et supprimer des commentaires
+-->
 ﻿<template>
   <div v-if="isVisible" class="modal-overlay" @click="closeModal">
     <div class="modal-content" @click.stop>
@@ -447,66 +452,3 @@ onMounted(() => {
 }
 </style>
 
-: chore: initialisation du projet LinkMe - 2025-08-20T11:32:00 
-
-: chore: installation de Pinia pour state management - 2025-08-22T16:20:00 
-
-: feat(backend): création de l'entité User - 2025-08-23T14:04:00 
-
-: feat(backend): ajout des méthodes getLikesCount et getCommentsCount - 2025-08-25T18:46:00 
-
-: feat(backend): ajout des méthodes getLikesCount et getCommentsCount - 2025-08-25T18:46:00 
-
-: feat(backend): création de l'entité Comment - 2025-08-25T18:53:00 
-
-: feat(backend): ajout de la propriété content à Comment - 2025-08-26T09:07:00 
-
-: feat(backend): ajout de la relation Comment->User (author) - 2025-08-26T11:53:00 
-
-: feat(backend): ajout de la relation Comment->Post - 2025-08-26T14:08:00 
-
-: feat(backend): création du CommentRepository - 2025-08-26T15:31:00 
-
-: feat(backend): configuration de la clé primaire composée - 2025-08-28T13:53:00 
-
-: feat(backend): création du FollowRepository - 2025-08-28T13:59:00 
-
-: feat(frontend): création de la vue Login.vue - 2025-09-01T16:11:00 
-
-: feat(backend): création du CommentController - 2025-09-05T14:47:00 
-
-: feat(backend): implémentation de GET /api/posts/{id}/comments - 2025-09-05T16:19:00 
-
-: feat(backend): tri chronologique des commentaires - 2025-09-05T19:03:00 
-
-: feat(backend): implémentation de POST /api/posts/{id}/comments - 2025-09-06T09:16:00 
-
-: feat(backend): validation du contenu du commentaire - 2025-09-06T12:46:00 
-
-: feat(backend): implémentation de DELETE /api/comments/{id} - 2025-09-06T15:32:00 
-
-: feat(frontend): implémentation de fetchPosts - 2025-09-06T18:11:00 
-
-: feat(frontend): implémentation de createPost - 2025-09-06T18:48:00 
-
-: feat(frontend): ajout des compteurs likes/commentaires - 2025-09-08T12:14:00 
-
-: feat(backend): vérification de l'auto-suivi (interdit) - 2025-09-08T18:45:00 
-
-: feat(backend): ajout des relations recipient, actor, post - 2025-09-12T19:26:00 
-
-: feat(backend): création de notification lors d'un commentaire - 2025-09-14T15:11:00 
-
-: feat(backend): éviter notification si l'auteur commente son post - 2025-09-14T17:59:00 
-
-: feat(frontend): bouton tout marquer comme lu - 2025-09-16T16:46:00 
-
-: feat(frontend): affichage du dernier message preview - 2025-09-20T13:21:00 
-
-: feat(frontend): rafraîchissement automatique des messages - 2025-09-22T16:30:00 
-
-: feat(backend): mise à jour du mot de passe - 2025-09-25T13:46:00 
-
-: feat(backend): tri par pertinence - 2025-09-27T19:14:00 
-
-: feat(backend): publication update lors nouveau commentaire - 2025-09-29T17:47:00 
