@@ -1,3 +1,8 @@
+<!--
+  Modale d'Édition de Profil
+  Formulaire pour modifier les informations du profil
+  Gère l'upload de la photo de profil
+-->
 ﻿<template>
   <div v-if="isVisible" class="modal-overlay" @click="closeModal">
     <div class="modal-content" @click.stop>
@@ -461,26 +466,3 @@ const handleSave = async () => {
 }
 </style>
 
-: chore: ajout du fichier docker-compose.yml - 2025-08-20T12:37:00 
-
-: feat(backend): création de l'entité User - 2025-08-23T14:04:00 
-
-: feat(backend): création du PostRepository - 2025-08-25T14:57:00 
-
-: feat(backend): logique toggle follow/unfollow - 2025-09-08T17:30:00 
-
-: feat(frontend): affichage de la liste des abonnements - 2025-09-12T10:10:00 
-
-: feat(backend): sérialisation des notifications avec relations - 2025-09-14T10:03:00 
-
-: feat(backend): éviter les notifications en double - 2025-09-15T10:30:00 
-
-: feat(backend): ajout support stickers dans Message - 2025-09-17T11:40:00 
-
-: feat(backend): tri des conversations par dernière activité - 2025-09-18T09:52:00 
-
-: feat(backend): implémentation de POST /api/chat/online-status - 2025-09-19T14:14:00 
-
-: feat(frontend): affichage des messages avec bulles - 2025-09-21T15:02:00 
-
-: feat: création d'index patterns dans Kibana - 2025-09-28T13:34:00 
