@@ -1,3 +1,8 @@
+<!--
+  Sidebar des Abonnements
+  Liste des utilisateurs suivis par l'utilisateur connecté
+  Permet d'accéder rapidement aux profils des followings
+-->
 ﻿<template>
   <div class="followings-sidebar">
     <div class="sidebar-header">
@@ -196,40 +201,3 @@ onMounted(() => {
 }
 </style>
 
-: chore: initialisation du projet LinkMe - 2025-08-20T11:32:00 
-
-: feat: ajout du service Kibana pour Elasticsearch - 2025-08-21T11:26:00 
-
-: chore: configuration de la base de données MySQL - 2025-08-21T19:00:00 
-
-: feat(backend): implémentation de POST /api/posts (création) - 2025-09-02T18:02:00 
-
-: feat(backend): création du LikeController - 2025-09-04T14:27:00 
-
-: feat(backend): gestion de la création du like - 2025-09-04T17:05:00 
-
-: feat(backend): implémentation de DELETE /api/comments/{id} - 2025-09-06T15:32:00 
-
-: style(frontend): stylisation de la carte de post - 2025-09-07T18:33:00 
-
-: feat(backend): logique toggle follow/unfollow - 2025-09-08T17:30:00 
-
-: style(frontend): design du profil public - 2025-09-11T19:25:00 
-
-: feat(backend): suppression des notifications en cascade - 2025-09-15T12:15:00 
-
-: feat(frontend): affichage de la liste des notifications - 2025-09-16T15:59:00 
-
-: feat(backend): implémentation de POST /api/chat/online-status - 2025-09-19T14:14:00 
-
-: feat(frontend): affichage du statut en ligne - 2025-09-20T16:18:00 
-
-: feat(frontend): rafraîchissement automatique des messages - 2025-09-22T16:30:00 
-
-: feat(backend): migration pour colonnes vérification email - 2025-09-24T10:55:00 
-
-: style(frontend): design formulaire réinitialisation - 2025-09-26T14:21:00 
-
-: docs: guide visualisation Elasticsearch avec Kibana - 2025-09-28T18:00:00 
-
-: feat(backend): publication update lors nouveau like - 2025-09-29T16:57:00 
