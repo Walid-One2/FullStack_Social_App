@@ -1,3 +1,8 @@
+<!--
+  Tooltip des Abonnés
+  Affiche la liste des followers dans un tooltip
+  Montre les compteurs followers/following
+-->
 ﻿<template>
   <div 
     class="followers-tooltip" 
@@ -203,38 +208,3 @@ onUnmounted(() => {
 }
 </style>
 
-: chore: création du projet Symfony 7 - 2025-08-21T14:20:00 
-
-: docs: ajout du README.md avec instructions de démarrage - 2025-08-22T13:07:00 
-
-: chore: installation de Pinia pour state management - 2025-08-22T16:20:00 
-
-: chore: installation d'Axios pour les requêtes HTTP - 2025-08-22T18:39:00 
-
-: feat(backend): configuration de la clé primaire composée - 2025-08-28T13:53:00 
-
-: feat(backend): création de la migration initiale des entités - 2025-08-28T15:02:00 
-
-: feat(backend): vérification de l'auteur pour l'édition - 2025-09-03T19:07:00 
-
-: feat(backend): gestion de la suppression du like - 2025-09-04T19:38:00 
-
-: feat(backend): liste des utilisateurs ayant liké - 2025-09-05T13:30:00 
-
-: feat(frontend): affichage du temps relatif de publication - 2025-09-08T14:42:00 
-
-: feat(backend): suppression des notifications en cascade - 2025-09-15T12:15:00 
-
-: feat(frontend): création du store notifications.js - 2025-09-15T16:02:00 
-
-: feat(frontend): bouton tout marquer comme lu - 2025-09-16T16:46:00 
-
-: feat(backend): création de l'entité Conversation - 2025-09-16T19:47:00 
-
-: feat(backend): ajout support stickers dans Message - 2025-09-17T11:40:00 
-
-: feat(frontend): affichage du dernier message preview - 2025-09-20T13:21:00 
-
-: feat(frontend): création de la vue VerifyEmail.vue - 2025-09-25T16:10:00 
-
-: feat(backend): indexation des utilisateurs - 2025-09-27T12:21:00 
