@@ -1,3 +1,8 @@
+<!--
+  Modale de Chat - Messagerie Instantanée
+  Interface de conversation 1-to-1
+  Supporte texte et stickers, mise à jour en temps réel via Mercure
+-->
 ﻿<template>
   <div v-if="isVisible" class="chat-modal-overlay" @click="closeModal">
     <div class="chat-modal-content" @click.stop>
@@ -785,50 +790,3 @@ onUnmounted(() => {
 }
 </style>
 
-: chore: initialisation du projet LinkMe - 2025-08-20T11:32:00 
-
-: chore: installation de Vue Router - 2025-08-22T14:49:00 
-
-: chore: configuration de Vite - 2025-08-23T10:41:00 
-
-: chore: ajout du Makefile pour automatisation - 2025-08-23T14:01:00 
-
-: feat(backend): gestion des erreurs d'authentification - 2025-08-29T18:48:00 
-
-: feat(frontend): implémentation de createPost - 2025-09-06T18:48:00 
-
-: feat(backend): sérialisation des données de suivi - 2025-09-09T16:25:00 
-
-: feat(frontend): création du composant FollowingsSidebar.vue - 2025-09-12T09:24:00 
-
-: feat(backend): implémentation de GET /api/notifications/unread-count - 2025-09-13T17:18:00 
-
-: feat(backend): création du ChatController - 2025-09-17T17:31:00 
-
-: feat(backend): implémentation de GET /api/chat/conversations - 2025-09-17T18:14:00 
-
-: feat(backend): implémentation de GET /api/chat/conversations/{id}/messages - 2025-09-18T11:13:00 
-
-: feat(backend): implémentation de POST /api/chat/conversations/{id}/messages - 2025-09-18T16:13:00 
-
-: feat(backend): implémentation de POST /api/chat/conversations/{id}/read - 2025-09-19T12:19:00 
-
-: feat(backend): implémentation de GET /api/chat/stickers - 2025-09-19T13:00:00 
-
-: feat(backend): implémentation de POST /api/chat/online-status - 2025-09-19T14:14:00 
-
-: feat(frontend): création du composant ChatSidebar.vue - 2025-09-19T14:57:00 
-
-: feat(frontend): affichage du statut en ligne - 2025-09-20T16:18:00 
-
-: feat(frontend): création du composant ChatModal.vue - 2025-09-20T17:54:00 
-
-: style(frontend): design de l'interface de chat - 2025-09-21T11:25:00 
-
-: style(frontend): design page de vérification email - 2025-09-25T16:11:00 
-
-: feat(frontend): redirection automatique vers login après 10s - 2025-09-26T11:00:00 
-
-: style(frontend): design formulaire réinitialisation - 2025-09-26T14:21:00 
-
-: feat(frontend): messages chat en temps réel - 2025-09-30T12:05:00 
