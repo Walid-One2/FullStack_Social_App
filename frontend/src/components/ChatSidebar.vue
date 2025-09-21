@@ -1,3 +1,8 @@
+<!--
+  Sidebar des Conversations
+  Liste de toutes les conversations de chat
+  Affiche aperçu du dernier message et badge messages non lus
+-->
 ﻿<template>
   <div class="chat-sidebar">
     <div class="chat-header">
@@ -335,42 +340,3 @@ onMounted(() => {
 }
 </style>
 
-: chore: ajout du fichier docker-compose.yml - 2025-08-20T12:37:00 
-
-: feat: configuration du service Mercure pour temps réel - 2025-08-21T11:40:00 
-
-: chore: configuration NelmioCorsBundle pour CORS - 2025-08-22T11:16:00 
-
-: feat(backend): ajout du champ name (nom d'utilisateur) à User - 2025-08-23T19:09:00 
-
-: feat(backend): création du CommentRepository - 2025-08-26T15:31:00 
-
-: feat(backend): création de la migration initiale des entités - 2025-08-28T15:02:00 
-
-: feat(backend): configuration des providers utilisateur - 2025-08-28T19:23:00 
-
-: feat(backend): sérialisation des données utilisateur - 2025-08-31T11:26:00 
-
-: feat(frontend): création du fichier api.js avec Axios - 2025-09-01T11:44:00 
-
-: feat(backend): création du LikeController - 2025-09-04T14:27:00 
-
-: feat(backend): tri chronologique des commentaires - 2025-09-05T19:03:00 
-
-: feat(frontend): affichage des informations utilisateur - 2025-09-10T15:46:00 
-
-: feat(backend): création de l'entité Notification - 2025-09-12T17:22:00 
-
-: feat(backend): ajout des propriétés type, message, isRead - 2025-09-12T17:54:00 
-
-: feat(frontend): gestion du compteur de non lues - 2025-09-15T18:11:00 
-
-: feat(frontend): bouton tout marquer comme lu - 2025-09-16T16:46:00 
-
-: feat(backend): implémentation de GET /api/chat/conversations - 2025-09-17T18:14:00 
-
-: feat(backend): mise à jour de lastMessageAt et preview - 2025-09-19T09:49:00 
-
-: feat(frontend): panel de sélection de stickers - 2025-09-21T19:34:00 
-
-: feat(backend): création du service ElasticsearchService - 2025-09-27T09:10:00 
