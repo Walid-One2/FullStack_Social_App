@@ -1,4 +1,8 @@
 #!/bin/bash
+# Script de démarrage et test automatique
+# Lance les containers Docker et vérifie la bonne exécution
+
+#!/bin/bash
 
 echo "🚀 Starting LinkMe application and testing..."
 
