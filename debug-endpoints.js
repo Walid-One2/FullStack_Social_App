@@ -5,7 +5,7 @@ const API_BASE = 'http://localhost:8000';
 
 async function debugEndpoints() {
   console.log('🔍 Debugging API endpoints...\n');
-  
+
   // Test 1: Vérifier les routes disponibles
   console.log('1. Testing available routes...');
   try {
@@ -15,7 +15,7 @@ async function debugEndpoints() {
   } catch (error) {
     console.log('❌ GET /api/posts failed:', error.response?.status, error.response?.data);
   }
-  
+
   // Test 2: Tester l'authentification
   console.log('\n2. Testing authentication...');
   try {
@@ -26,11 +26,11 @@ async function debugEndpoints() {
     console.log('✅ Authentication works');
     const token = authResponse.data.token;
     console.log('Token received:', token ? 'Yes' : 'No');
-    
+
     // Test 3: Tester avec le token
     console.log('\n3. Testing authenticated requests...');
     const authHeaders = { Authorization: `Bearer ${token}` };
-    
+
     // Test GET posts avec auth
     try {
       const postsResponse = await axios.get(`${API_BASE}/api/posts`, { headers: authHeaders });
@@ -38,7 +38,7 @@ async function debugEndpoints() {
     } catch (error) {
       console.log('❌ GET /api/posts with auth failed:', error.response?.status, error.response?.data);
     }
-    
+
     // Test POST post
     try {
       const postResponse = await axios.post(`${API_BASE}/api/posts`, {
@@ -47,7 +47,7 @@ async function debugEndpoints() {
       console.log('✅ POST /api/posts works');
       const postId = postResponse.data.id;
       console.log('Post ID:', postId);
-      
+
       // Test like
       try {
         const likeResponse = await axios.post(`${API_BASE}/api/posts/${postId}/like`, {}, { headers: authHeaders });
@@ -56,7 +56,7 @@ async function debugEndpoints() {
       } catch (error) {
         console.log('❌ POST /api/posts/{id}/like failed:', error.response?.status, error.response?.data);
       }
-      
+
       // Test comment
       try {
         const commentResponse = await axios.post(`${API_BASE}/api/posts/${postId}/comments`, {
@@ -67,7 +67,7 @@ async function debugEndpoints() {
       } catch (error) {
         console.log('❌ POST /api/posts/{id}/comments failed:', error.response?.status, error.response?.data);
       }
-      
+
       // Nettoyer
       try {
         await axios.delete(`${API_BASE}/api/posts/${postId}`, { headers: authHeaders });
@@ -75,11 +75,11 @@ async function debugEndpoints() {
       } catch (error) {
         console.log('❌ DELETE /api/posts/{id} failed:', error.response?.status, error.response?.data);
       }
-      
+
     } catch (error) {
       console.log('❌ POST /api/posts failed:', error.response?.status, error.response?.data);
     }
-    
+
   } catch (error) {
     console.log('❌ Authentication failed:', error.response?.status, error.response?.data);
   }
