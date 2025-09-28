@@ -84,10 +84,3 @@ make clear-backend-cache
 
 ---
 
-## 📖 Next Steps
-
-- Integrate Elasticsearch with your Symfony backend (e.g., using FOSElasticaBundle or ElasticSearch PHP client).
-- Extend API Platform to support searching/filtering with Elasticsearch.
- Checkpoint: docs: ajout du README.md avec instructions de démarrage - 2025-08-22T13:07:00 
-
- Checkpoint: docs: ajout instructions Kibana dans README - 2025-09-28T12:46:00 
